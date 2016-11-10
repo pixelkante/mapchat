@@ -6,23 +6,50 @@ font-family: 'Open Sans', sans-serif;
 body {
     margin: 0;
     font-family: 'Lato', sans-serif;
-    background-color: #3c3f41;
+    background-color: #eeeeee;
 }
 
 nav {
-    background-color: #313335;
-    border-left: solid 2px #2a2a2a; /* ghostwhite; */
-    width: 200px;
+    background-color: white;
+    border-left: solid 1px black;
     height: 100vh;
     position: fixed;
     top: 0;
     right: 0;
-    color: white;
+    padding: 0 20px;
+}
+
+nav a, nav a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul {
+    list-style: none;
+    padding-left: 25px;
+    margin-top: 0px;
+}
+
+nav h4 {
+    padding-top: 6px;
+    margin-bottom: 8px;
+    border-top: dashed 1px black;
+}
+
+footer {
+    text-align: center;
+    font-size: 10px;
+    background-color: white;
+    margin: 0;
+    padding: 10px 0;
 }
 
 .page {
     height: 100vh;
     margin: 0;
-    padding: 100px 250px 100px 100px;
-    border-top: solid 1px white;
+    border-bottom: dashed 1px black;
+}
+
+.red {
+    background-color: #aa6060;
 }
