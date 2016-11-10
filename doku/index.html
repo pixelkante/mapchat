@@ -2,10 +2,39 @@
 <html>
 <head>
     <title>Mapchat Documentation</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="script" href="js/init.js">
+    <meta name="author" content="sebastian oley">
 </head>
 <body>
-<p>Hello world!</p>
+<header>
+
+</header>
+<main>
+    <div class="category" data-name="Concept" data-directory="concept">
+        <div class="page" data-name="About" data-content="about.html"></div>
+    </div>
+    <div class="category" data-name="Design" data-directory="design">
+        <div class="page" data-name="Wireframes" data-content="wireframes.html"></div>
+        <div class="page" data-name="Color" data-content="color.html"></div>
+        <div class="page" data-name="Type" data-content="type.html"></div>
+    </div>
+    <div class="category" data-name="Technical Concept" data-directory="techconcept">
+        <div class="page" data-name="User Stories" data-content="userstories.html"></div>
+        <div class="page" data-name="Use Cases" data-content="usecases.html"></div>
+        <div class="page" data-name="Data Model" data-content="model.html"></div>
+    </div>
+</main>
+<footer>
+    <p>by R. Bridts, S. Fritsch and S. Oley</p>
+    <p>at University of Applied Sciences Augsburg</p>
+</footer>
+
+<script src="js/init.js"></script>
+<script>
+    addNav();
+    addContent();
+</script>
+
 </body>
 </html>
