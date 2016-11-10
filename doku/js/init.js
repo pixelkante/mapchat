@@ -33,16 +33,10 @@ function addNav() {
 }
 
 function addContent() {
+    var pages = document.getElementsByClassName('page');
 
+    for (var i = 0; i < pages.length; i++) {
+        var path = 'content/' + pages[i].getAttribute('data-path');
+        $(".page").eq(i).load(path);    // ajax
+    }
 }
-
-/*
-var xhr = new XMLHttpRequest();
-xhr.open('GET', '1-1.html', true);
-xhr.onreadystatechange = function() {
-    if (this.readyState!==4) return;
-    if (this.status!==200) return; // or whatever error handling you want
-    document.getElementsByTagName('main').childNodes[0].innerHTML = this.responseText;
-};
-xhr.send();
-*/
