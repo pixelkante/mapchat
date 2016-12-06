@@ -3,8 +3,12 @@ font-family: 'Lato', sans-serif;
 font-family: 'Open Sans', sans-serif;
 */
 
-body {
+* {
     margin: 0;
+    padding: 0;
+}
+
+body {
     font-family: 'Lato', sans-serif;
     background-color: #eeeeee;
 }
@@ -27,11 +31,17 @@ nav a, nav a:hover {
 nav ul {
     list-style: none;
     padding-left: 25px;
-    margin-top: 0px;
+}
+
+nav h1 {
+    font-weight: bold;
+    margin-top: 16px;
+    margin-bottom: 8px;
 }
 
 nav h4 {
     padding-top: 6px;
+    margin-top: 8px;
     margin-bottom: 8px;
     border-top: dashed 1px black;
 }
@@ -40,16 +50,58 @@ footer {
     text-align: center;
     font-size: 10px;
     background-color: white;
-    margin: 0;
     padding: 10px 0;
 }
 
-.page {
+header, .page {
     height: 100vh;
-    margin: 0;
     border-bottom: dashed 1px black;
+    padding: 80px 220px 20px 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 100px;
+    padding-bottom: 200px;
+}
+
+.subtitle {
+    border-top: dashed 1px black;
+    padding-top: 8px;
+    text-align: center;
+}
+
+.page-heading {
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
 }
 
 .red {
     background-color: #aa6060;
+}
+
+/* mapchat specific */
+
+.mapchat {
+    color: white;
+    background-color: #aa1010;
+    border-bottom: dashed 5px #eeeeee;
+}
+
+.mapchat .title {
+    font-family: 'Heebo', sans-serif;
+    text-transform: uppercase;
+}
+
+.mapchat .subtitle {
+    border-top: dashed 1px white;
 }
