@@ -1,32 +1,34 @@
-<div class="col perc-30">
-    <h2>Concept</h2>
-    <p>Mapchat kann man am einfachsten als 'location based chatting' bezeichnen oder vereinfacht gesagt auch 'geo-twitter'.</p>
-    <p>
-        Prinzipiell geht es um die starke Verknüpfung von Örtlichkeit und Nachricht, mit Schwerpunkt auf ersterem.<br />
-        Dies soll Mapchat dann auch von verwandten Plattformen unterscheiden, denn an sich ist geo locatating in diesem Bereich ja keine Neuheit.<br />
-        Der User soll die Möglichkeit haben, kleine Messages zu verfassen, die an seinen aktuellen Aufenthaltspunkt gebunden sind.<br />
-        Andere User sehen auf einer dynamischen Karte dann Markierungen für aktuelle Posts, können diese lesen und Antworten verfassen.<br />
-        So soll ein öffentlicher, an einen Ort gebundener Dialog entstehen.<br />
-        Zusätzlich wird tagging wichtiger Bestandteil werden, um eine Filterfunktion über Ortsnamen hinaus zu ermöglichen.<br />
-        Um auch persönliche Bezüge darzustellen, also Posts von Freunden, könnten diese hervorgehoben werden.<br />
-        Denkbar wäre auch eine Sicht für einen spezifischen User, in der ein zeitlicher Ablauf seiner Posts ersichtlich wird.
-    </p>
-</div>
-<div class="col perc-70">
-    <div>
-        <h2>Target Group & Use Cases</h2>
+<div class="row">
+    <div class="perc-30">
+        <h2>Concept</h2>
+        <p>Mapchat kann man am einfachsten als 'location based chatting' bezeichnen oder vereinfacht gesagt auch 'geo-twitter'.</p>
         <p>
-            Potenzielle User sind im allgemeinen social-media-interessierte junge Menschen, aber eigentlich ist eine genaue Eingrenzung wenig sinnvoll, da die Plattform und deren Themen von den Usern gestaltet wird. Interessant ist einfach, dass nicht der User sondern die Örtlichkeit im Mittelpunkt steht.<br />
-            Nehmen wir an, Person A möchte ausgehen und aktuelle Infos über laufende Veranstaltungen bekommen.<br />
-            Sie hört gerne eine bestimmte Art von Musik, filtert nun alle Nachrichten in ihrer Umgebung nach dem dem entsprechenden hashtag und bekommt eine Ansammlung von Markierungen dazu.<br />
-            [...]
+            Prinzipiell geht es um die starke Verknüpfung von Örtlichkeit und Nachricht, mit Schwerpunkt auf ersterem.<br />
+            Dies soll Mapchat dann auch von verwandten Plattformen unterscheiden, denn an sich ist geo locatating in diesem Bereich ja keine Neuheit.<br />
+            Der User soll die Möglichkeit haben, kleine Messages zu verfassen, die an seinen aktuellen Aufenthaltspunkt gebunden sind.<br />
+            Andere User sehen auf einer dynamischen Karte dann Markierungen für aktuelle Posts, können diese lesen und Antworten verfassen.<br />
+            So soll ein öffentlicher, an einen Ort gebundener Dialog entstehen.<br />
+            Zusätzlich wird tagging wichtiger Bestandteil werden, um eine Filterfunktion über Ortsnamen hinaus zu ermöglichen.<br />
+            Um auch persönliche Bezüge darzustellen, also Posts von Freunden, könnten diese hervorgehoben werden.<br />
+            Denkbar wäre auch eine Sicht für einen spezifischen User, in der ein zeitlicher Ablauf seiner Posts ersichtlich wird.
         </p>
     </div>
-    <div>
-        <h2>Technical Concept</h2>
-        <p>
-            “Map Chat” soll als Django-Applikation umgesetzt werden. Django bietet eine relativ einfache Möglichkeit zur User-Authentifizierung und die Möglichkeit diese mit SocialNetwork-Accounts (z.B Facebook, Twitter etc.) zu verbinden. Posts und zugehörige Daten werden mithilfe von Django in einer MySQL Datenbank gespeichert. Die Ortsdaten eines Posts sollen mit Hilfe der GoogleMaps-API interpretiert und dargestellt werden.<br />
-            Inhalte werden anhand ihrer Tags und Orten durchsuchter gemacht. Tags werden einzelnen Posts Kategorien wie Dinner, Drinks oder Baden zuordnen.
-        </p>
+    <div class="col perc-70">
+        <div>
+            <h2>Target Group & Use Cases</h2>
+            <p>
+                Potenzielle User sind im allgemeinen social-media-interessierte junge Menschen, aber eigentlich ist eine genaue Eingrenzung wenig sinnvoll, da die Plattform und deren Themen von den Usern gestaltet wird. Interessant ist einfach, dass nicht der User sondern die Örtlichkeit im Mittelpunkt steht.<br />
+                Nehmen wir an, Person A möchte ausgehen und aktuelle Infos über laufende Veranstaltungen bekommen.<br />
+                Sie hört gerne eine bestimmte Art von Musik, filtert nun alle Nachrichten in ihrer Umgebung nach dem dem entsprechenden hashtag und bekommt eine Ansammlung von Markierungen dazu.<br />
+                [...]
+            </p>
+        </div>
+        <div>
+            <h2>Technical Concept</h2>
+            <p>
+                “Map Chat” soll als Django-Applikation umgesetzt werden. Django bietet eine relativ einfache Möglichkeit zur User-Authentifizierung und die Möglichkeit diese mit SocialNetwork-Accounts (z.B Facebook, Twitter etc.) zu verbinden. Posts und zugehörige Daten werden mithilfe von Django in einer MySQL Datenbank gespeichert. Die Ortsdaten eines Posts sollen mit Hilfe der GoogleMaps-API interpretiert und dargestellt werden.<br />
+                Inhalte werden anhand ihrer Tags und Orten durchsuchter gemacht. Tags werden einzelnen Posts Kategorien wie Dinner, Drinks oder Baden zuordnen.
+            </p>
+        </div>
     </div>
 </div>

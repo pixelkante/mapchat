@@ -156,16 +156,12 @@ nav h4 {
 
 /* flex */
 
-.row {
+.row, .col {
     display: flex;
-    flex-wrap: wrap;
-    padding: 0 10px;
 }
 
 .col {
-    display: flex;
     flex-direction: column;
-    padding-right: 20px;
 }
 
 .perc-10 { width: 10%; }
@@ -178,6 +174,11 @@ nav h4 {
 .perc-80 { width: 80%; }
 .perc-90 { width: 90%; }
 .perc-100 { width: 100%; }
+
+.perc-10, .perc-20, .perc-30, .perc-40, .perc-50,
+.perc-60, .perc-70, .perc-80, .perc-90, .perc-100 {
+    padding-right: 20px;
+}
 
 
 /* mapchat specific */
