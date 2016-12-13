@@ -127,6 +127,7 @@ nav h4 {
     padding-top: 4px;
     margin-top: 12px;
     margin-bottom: 4px;
+    color: white;
     border-top: dashed 1px white;
     transition: 1s;
 }
@@ -152,6 +153,7 @@ nav h4 {
     color: black;
 }
 
+
 /* flex */
 
 .row {
@@ -176,6 +178,7 @@ nav h4 {
 .perc-80 { width: 80%; }
 .perc-90 { width: 90%; }
 .perc-100 { width: 100%; }
+
 
 /* mapchat specific */
 
