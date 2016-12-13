@@ -3,16 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Mapchat Documentation</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Heebo:900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Lato:900|Open+Sans|Open+Sans:800" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 <body>
 <header class="mapchat" data-name="Mapchat">
-    <div class="title">Mapchat</div>
-    <div class="subtitle">
-        <p>by R. Bridts, S. Fritsch and S. Oley</p>
-        <p>at University of Applied Sciences Augsburg</p>
+    <div class="title row">
+        <img src="img/logo.svg"> Mapchat
+    </div>
+    <div class="doc-info">
+        <p>
+            by R. Bridts, S. Fritsch and S. Oley<br>
+            at University of Applied Sciences Augsburg
+        </p>
     </div>
 </header>
 <main>
@@ -39,6 +43,12 @@
 <script>
     addContent();
     addNav();
+    addHeadings();
+    addAnchors();
+    sizeHandler();
+
+    window.addEventListener("resize", sizeHandler, true);
+    window.addEventListener("scroll", scrollHandler, true);
 </script>
 
 </body>
